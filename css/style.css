@@ -1,0 +1,228 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+
+
+header {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: #333; /* Dark background color */
+    color: #fff; /* Light text color */
+    padding: 20px;
+}
+
+.header-section {
+    flex: 1;
+
+}
+
+header .logo a{
+    color: white;
+}
+
+.nav {
+    text-align: center;
+    padding: 20px;
+}
+
+.nav li{
+    padding: 10px;
+}
+
+.nav a {
+
+    padding: 10px;
+    transition: background-color 0.3s;
+    color: white; /* Dark text color */
+}
+
+.nav a:hover {
+    padding: 10px;
+    color: #fff; /* Light text color on hover */
+    background-color: #555; /* Slightly darker background color on hover */
+}
+
+.login-button {
+    display: inline-block;
+}
+
+.login-button a{
+    color: white;
+}
+
+.login-button button {
+    padding: 10px;
+    background-color: #555; /* Slightly darker background color */
+    color: #fff; /* Light text color */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+.login-button button:hover {
+    background-color: #777; /* Even darker background color on hover */
+}
+
+section {
+    min-height: 100%;
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background color */
+}
+img {
+    max-width: 100%; /* Make the image responsive */
+    height: auto;
+    display: block; /* Remove extra space beneath the image */
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+footer {
+    
+    color: #fff; /* Light text color */
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    background-color: #555; /* Slightly darker background color */
+}
+
+.footer-section {
+    flex: 1;
+    padding: 20px;
+    text-align: justify; /* Text alignment */
+}
+
+.footer-section li a{
+    color: #ccc;
+}
+
+.footer-section li a:hover{
+    color: white;
+}
+
+
+.footer-section h2 {
+    color: #fff; /* Light text color for section headings */
+}
+
+.footer-section p {
+    color: #ccc; /* Slightly lighter text color for paragraph text */
+}
+
+
+
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333; /* Dark background color */
+    padding: 20px;
+}
+
+/* Media query for smaller screens */
+/* Media query for smaller screens */
+@media screen and (max-width: 767px) {
+    .nav ul {
+        display: none; /* Hide the list on smaller screens */
+    }
+
+    .nav.show ul {
+        display: flex; /* Show the list when the 'show' class is added to the nav */
+        flex-direction: column; /* Stack list items vertically */
+        align-items: center; /* Center items horizontally */
+        position: absolute;
+        top: 60px; /* Adjust the top position based on your header height */
+        left: 0;
+        width: 100%;
+        padding: 30px;
+        background-color: #333; /* Set background color for the navigation */
+    }
+
+    .nav.show ul li {
+        padding: 10px;
+        margin: 0; /* Remove margin to ensure balanced spacing */
+    }
+
+    .nav-toggle {
+        display: block; /* Display the button for smaller screens */
+        font-size: 20px; /* Adjust the font size of the button */
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .nav-toggle:focus {
+        outline: none; /* Remove the focus outline for better appearance */
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .nav ul {
+        display: flex; /* Display the list as a horizontal bar on larger screens */
+    }
+
+    .nav-toggle {
+        display: none; /* Hide the toggle button on larger screens */
+    }
+}
+@media screen and (min-width: 768px) {
+    .footer-content {
+        flex-direction: row;
+    }
+
+    .footer-section {
+        flex: 1;
+        margin: 5px;
+    }
+}
+
+form {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+
+  input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+  }
+
+  button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #45a049;
+  }

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- header starts here -->
+    <header>
+        <div class="header-section nav">
+            <button class="nav-toggle" onclick="toggleNav()">☰</button>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="service.html">Service</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="header-section logo">
+            <h1><a href="index.html">LOGO</a></h1>
+        </div>
+
+        <div class="header-section login-button">
+            <button><a href="login.html">Login</a></button>
+        </div>
+    </header>
+   
+
+    <!-- section starts here -->
+    <section>
+        <h1>Frequently Asked Questions</h1>
+
+        <section>
+          <h2>1. What are the system requirements for online classes?</h2>
+          <p>Our online classes are accessible on a variety of devices, including computers, tablets, and smartphones. Ensure you have a stable internet connection and a compatible browser such as Chrome, Firefox, or Safari.</p>
+        </section>
+      
+        <section>
+          <h2>2. How do I enroll in a live coding class?</h2>
+          <p>To enroll in a live coding class, simply navigate to the class schedule on our website, choose your preferred session, and follow the enrollment instructions. Payments can be made securely through our online platform.</p>
+        </section>
+      
+        <section>
+          <h2>3. Can I access language learning materials offline?</h2>
+          <p>Yes, we offer downloadable resources for language learning. While live sessions require an internet connection, you can download lesson materials and practice offline at your convenience.</p>
+        </section>
+      
+        <section>
+          <h2>4. Is there a free trial for fitness workouts?</h2>
+          <p>Yes, we offer a free trial period for our fitness workouts. Sign up on our website to access the trial and experience our virtual fitness classes before committing to a subscription.</p>
+        </section>
+      
+        <section>
+          <h2>5. Are there any prerequisites for online music lessons?</h2>
+          <p>No, our online music lessons cater to all skill levels, from beginners to advanced musicians. Whether you're starting fresh or looking to refine your skills, our lessons are designed to accommodate various levels of expertise.</p>
+        </section>
+    </section>
+
+    <!-- footer section starts here -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h2>ABOUT</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam facere ad magni. Perspiciatis beatae, voluptate delectus consectetur rerum aspernatur in dicta recusandae esse quisquam corrupti quo dolorem ducimus soluta eum?</p>
+            </div>
+            <div class="footer-section links">
+                <h2>QUICK LINKS</h2>
+                <ul>
+                    <li><a href="#">apple</a></li>
+                    <li><a href="#">mango</a></li>
+                    <li><a href="#">orange</a></li>
+                    <li><a href="#">banana</a></li>
+                    <li><a href="#">pineapple</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h2>Contact</h2>
+                <p>Feel free to reach out:</p>
+                <p>Email: abcde@gmail.com</p>
+                <p>Phone: 93XXXXXXXX</p>
+                <p>Location: Kathmandu,</p>
+                <form action="/submit_contact_form" method="post">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+                <label for="subscribe">Subscribe to Newsletter:</label>
+                <input type="checkbox" id="subscribe" name="subscribe">
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Your Website. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script>
+    function toggleNav() {
+    var nav = document.querySelector('.nav');
+    nav.classList.toggle('show');
+    }
+    </script>
+</body>
+</html>

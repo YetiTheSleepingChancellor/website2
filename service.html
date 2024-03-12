@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- header starts here -->
+    <header>
+        <div class="header-section nav">
+            <button class="nav-toggle" onclick="toggleNav()">☰</button>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="service.html">Service</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="header-section logo">
+            <h1><a href="index.html">LOGO</a></h1>
+        </div>
+
+        <div class="header-section login-button">
+            <button><a href="login.html">Login</a></button>
+        </div>
+    </header>
+   
+
+    <!-- section starts here -->
+    <section>
+        <h1>Welcome to Our Online Platform</h1>
+
+        <section>
+          <h2>1. Live Coding Classes</h2>
+          <p>Enhance your programming skills with our live coding classes. Join expert instructors in real-time sessions to learn and practice coding in various programming languages.</p>
+        </section>
+      
+        <section>
+          <h2>2. Virtual Language Learning</h2>
+          <p>Immerse yourself in a virtual environment to learn new languages. Our language learning platform offers interactive lessons, cultural insights, and speaking practice with native speakers.</p>
+        </section>
+      
+        <section>
+          <h2>3. Fitness Workouts at Home</h2>
+          <p>Stay fit and healthy with our virtual fitness classes. Join experienced trainers for high-energy workouts, yoga sessions, and personalized fitness plans that you can follow from the comfort of your home.</p>
+        </section>
+      
+        <section>
+          <h2>4. Online Music Lessons</h2>
+          <p>Discover the joy of playing a musical instrument. Our online music lessons cover a wide range of instruments and musical genres. Learn from skilled musicians and practice at your own pace.</p>
+        </section>
+      
+        <section>
+          <h2>5. Digital Art Workshops</h2>
+          <p>Unlock your creativity with our digital art workshops. Whether you're a beginner or an experienced artist, our workshops cover various techniques in digital art, from illustration to animation.</p>
+        </section>
+    </section>
+
+    <!-- footer section starts here -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h2>ABOUT</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam facere ad magni. Perspiciatis beatae, voluptate delectus consectetur rerum aspernatur in dicta recusandae esse quisquam corrupti quo dolorem ducimus soluta eum?</p>
+            </div>
+            <div class="footer-section links">
+                <h2>QUICK LINKS</h2>
+                <ul>
+                    <li><a href="#">apple</a></li>
+                    <li><a href="#">mango</a></li>
+                    <li><a href="#">orange</a></li>
+                    <li><a href="#">banana</a></li>
+                    <li><a href="#">pineapple</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h2>Contact</h2>
+                <p>Feel free to reach out:</p>
+                <p>Email: abcde@gmail.com</p>
+                <p>Phone: 93XXXXXXXX</p>
+                <p>Location: Kathmandu,</p>
+                <form action="/submit_contact_form" method="post">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+                <label for="subscribe">Subscribe to Newsletter:</label>
+                <input type="checkbox" id="subscribe" name="subscribe">
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Your Website. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script>
+    function toggleNav() {
+    var nav = document.querySelector('.nav');
+    nav.classList.toggle('show');
+    }
+    </script>
+</body>
+</html>

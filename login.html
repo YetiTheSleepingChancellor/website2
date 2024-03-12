@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- header starts here -->
+    <header>
+        <div class="header-section nav">
+            <button class="nav-toggle" onclick="toggleNav()">☰</button>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="service.html">Service</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="header-section logo">
+            <h1><a href="index.html">LOGO</a></h1>
+        </div>
+
+        <div class="header-section login-button">
+            <button><a href="login.html">Login</a></button>
+        </div>
+    </header>
+   
+
+    <!-- section starts here -->
+    <section>
+        <form action="login_process.php" method="post">
+            <h1>Login</h1>
+            
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+        
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        
+            <button type="submit">Login</button>
+          </form>
+    </section>
+
+    <!-- footer section starts here -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h2>ABOUT</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam facere ad magni. Perspiciatis beatae, voluptate delectus consectetur rerum aspernatur in dicta recusandae esse quisquam corrupti quo dolorem ducimus soluta eum?</p>
+            </div>
+            <div class="footer-section links">
+                <h2>QUICK LINKS</h2>
+                <ul>
+                    <li><a href="#">apple</a></li>
+                    <li><a href="#">mango</a></li>
+                    <li><a href="#">orange</a></li>
+                    <li><a href="#">banana</a></li>
+                    <li><a href="#">pineapple</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h2>Contact</h2>
+                <p>Feel free to reach out:</p>
+                <p>Email: abcde@gmail.com</p>
+                <p>Phone: 93XXXXXXXX</p>
+                <p>Location: Kathmandu,</p>
+                <form action="/submit_contact_form" method="post">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+                <label for="subscribe">Subscribe to Newsletter:</label>
+                <input type="checkbox" id="subscribe" name="subscribe">
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Your Website. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script>
+    function toggleNav() {
+    var nav = document.querySelector('.nav');
+    nav.classList.toggle('show');
+    }
+    </script>
+</body>
+</html>
